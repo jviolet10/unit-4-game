@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Crystal Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <script src="game.js"></script> 
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Crystal Collector</h1></div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 instructions">
+            <h1>Instructions</h1> 
+            <h3>Select from the crystals below.
+              <br>Each crystal has a unique, and unknown point value.
+              <br>Discover the values add up to the total.
+              <br>If you go over, you loose!
+              <br>
+            </h3>
+          </div>
+        </div>
+      <div>
+
+       <h3>Score to match: <span id="scoreToMatch"></span></h3>
+       <h3>Wins: <span id="wins"></span></h3>
+       <h3>Losses: <span id="losses"></span></h3>
+
+       <div class="row text-center">
+            <!-- Adding a blank sm-2 to space the images closer together -->
+              <div class="col-sm-2">
+              </div>
+        <div class="col-sm-2">
+        <img src="red.jpg" class="img-thumbnail red" width="250">
+        </div>
+        <div class="col-sm-2">
+        <img src="yellow.jpg" class="img-thumbnail yellow" width="250">
+        </div>
+        <div class="col-sm-2">
+        <img src="green.jpg" class="img-thumbnail green" width="250">
+        </div>
+        <div class="col-sm-2">
+        <img src="blue.jpg" class="img-thumbnail blue" width="250">
+        </div>
+            <!-- Adding a blank sm-2 to space the images closer together -->
+              <div class="col-sm-2">
+              </div>
+      </div>
+
+      <h3>Your current count is: <span id="totalScore"> 0 </span></h3>
+      </div>
+    </div>
+    </div>
+
+
+</body>
+<!-- JS -->
+<script src="game.js"></script> 
+</html>
